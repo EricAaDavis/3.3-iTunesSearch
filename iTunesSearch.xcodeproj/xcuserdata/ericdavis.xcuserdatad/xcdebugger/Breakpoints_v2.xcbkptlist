@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "D3755544-9AD0-46BB-848F-8234D042F9EE"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5169F234-C00B-47F6-AD03-370C1BD67999"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iTunesSearch/StoreItemContainerViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "StoreItemContainerViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "5169F234-C00B-47F6-AD03-370C1BD67999 - c623bc3b3a8ffc3e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iTunesSearch.StoreItemContainerViewController.collectionViewDataSource.getter : Swift.Optional&lt;UIKit.UICollectionViewDiffableDataSource&lt;Swift.String, iTunesSearch.StoreItem&gt;&gt;"
+                  moduleName = "iTunesSearch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ericdavis/Documents/edx%20ios-development/APP3X/Student%20Resources/3.3%20iTunesSearch/iTunesSearch/StoreItemContainerViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "5169F234-C00B-47F6-AD03-370C1BD67999 - 3383e7f5b6218022"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iTunesSearch.StoreItemContainerViewController.collectionViewDataSource.setter : Swift.Optional&lt;UIKit.UICollectionViewDiffableDataSource&lt;Swift.String, iTunesSearch.StoreItem&gt;&gt;"
+                  moduleName = "iTunesSearch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ericdavis/Documents/edx%20ios-development/APP3X/Student%20Resources/3.3%20iTunesSearch/iTunesSearch/StoreItemContainerViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "5169F234-C00B-47F6-AD03-370C1BD67999 - d789aba671e558f8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iTunesSearch.StoreItemContainerViewController.collectionViewDataSource.modify : Swift.Optional&lt;UIKit.UICollectionViewDiffableDataSource&lt;Swift.String, iTunesSearch.StoreItem&gt;&gt;"
+                  moduleName = "iTunesSearch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ericdavis/Documents/edx%20ios-development/APP3X/Student%20Resources/3.3%20iTunesSearch/iTunesSearch/StoreItemContainerViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "5169F234-C00B-47F6-AD03-370C1BD67999 - 673a80b89b7ad992"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iTunesSearch.StoreItemContainerViewController.collectionViewDataSource.modify : Swift.Optional&lt;UIKit.UICollectionViewDiffableDataSource&lt;Swift.String, iTunesSearch.StoreItem&gt;&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "iTunesSearch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ericdavis/Documents/edx%20ios-development/APP3X/Student%20Resources/3.3%20iTunesSearch/iTunesSearch/StoreItemContainerViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "5169F234-C00B-47F6-AD03-370C1BD67999 - 756e13f06eb7f7c7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iTunesSearch.StoreItemContainerViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; iTunesSearch.StoreItemContainerViewController"
+                  moduleName = "iTunesSearch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ericdavis/Documents/edx%20ios-development/APP3X/Student%20Resources/3.3%20iTunesSearch/iTunesSearch/StoreItemContainerViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "624">
+               </Location>
+               <Location
+                  uuid = "5169F234-C00B-47F6-AD03-370C1BD67999 - 5c261f0ff7fc49b3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iTunesSearch.StoreItemContainerViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;iTunesSearch.StoreItemContainerViewController&gt;"
+                  moduleName = "iTunesSearch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ericdavis/Documents/edx%20ios-development/APP3X/Student%20Resources/3.3%20iTunesSearch/iTunesSearch/StoreItemContainerViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "600">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
