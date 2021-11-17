@@ -68,14 +68,19 @@ class StoreItemContainerViewController: UIViewController, UISearchResultsUpdatin
         searchController.searchBar.scopeButtonTitles = ["Movies", "Music", "Apps", "Books"]
     }
     
+    // DEBOUNCE
     func updateSearchResults(for searchController: UISearchController) {
-        NSObject.cancelPreviousPerformRequests(withTarget: self, selector: #selector(fetchMatchingItems), object: nil)
+        let selector = #selector(fetchMatchingItems)
+        
+        // Don't call the selector function for the previous input
+        NSObject.cancelPreviousPerformRequests(withTarget: self, selector: selector, object: nil)
         
         //Since we don't want to fetch items on every keystroke, we fetch it after it has been 0.3 seconds since the last keystroke
-        perform(#selector(fetchMatchingItems), with: nil, afterDelay: 0.3)
+        perform(selector, with: nil, afterDelay: 0.3)
     }
                 
     @IBAction func switchContainerView(_ sender: UISegmentedControl) {
+        //collectionView.numberOfItemsPerRow = 1 || 3
         tableContainerView.isHidden.toggle()
         collectionContainerView.isHidden.toggle()
     }

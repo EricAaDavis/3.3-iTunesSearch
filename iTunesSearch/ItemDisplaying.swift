@@ -8,9 +8,9 @@
 import UIKit
 
 protocol ItemDisplaying {
-    var itemImageView: UIImageView! { get set }
-    var titleLabel: UILabel! { get set }
-    var detailLabel: UILabel! { get set }
+    var itemImageView: UIImageView! { get }
+    var titleLabel: UILabel! { get }
+    var detailLabel: UILabel! { get }
 }
 
 
