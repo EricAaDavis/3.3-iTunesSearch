@@ -20,6 +20,9 @@
 		18A6053723CFABDC002037CA /* StoreItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6053623CFABDC002037CA /* StoreItemController.swift */; };
 		2055B3B52743ED5B00D80CB8 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2055B3B42743ED5B00D80CB8 /* ItemCollectionViewCell.swift */; };
 		2055B3B72743F68800D80CB8 /* ItemDisplaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2055B3B62743F68800D80CB8 /* ItemDisplaying.swift */; };
+		205A3CE1274D068600B6DA53 /* SearchScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205A3CE0274D068600B6DA53 /* SearchScope.swift */; };
+		205A3CE3274D297F00B6DA53 /* StoreItemTableViewDiffableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205A3CE2274D297E00B6DA53 /* StoreItemTableViewDiffableDataSource.swift */; };
+		205A3CE5274D372900B6DA53 /* StoreItemCollectionViewSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205A3CE4274D372900B6DA53 /* StoreItemCollectionViewSectionHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		18A6053623CFABDC002037CA /* StoreItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreItemController.swift; sourceTree = "<group>"; };
 		2055B3B42743ED5B00D80CB8 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		2055B3B62743F68800D80CB8 /* ItemDisplaying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDisplaying.swift; sourceTree = "<group>"; };
+		205A3CE0274D068600B6DA53 /* SearchScope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScope.swift; sourceTree = "<group>"; };
+		205A3CE2274D297E00B6DA53 /* StoreItemTableViewDiffableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreItemTableViewDiffableDataSource.swift; sourceTree = "<group>"; };
+		205A3CE4274D372900B6DA53 /* StoreItemCollectionViewSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreItemCollectionViewSectionHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,10 +82,13 @@
 				18A6053423CFABBB002037CA /* StoreItem.swift */,
 				18A6053623CFABDC002037CA /* StoreItemController.swift */,
 				18A6053023CF9829002037CA /* StoreItemListTableViewController.swift */,
+				1812E9A223F36978009BBFA7 /* StoreItemCollectionViewController.swift */,
 				2055B3B42743ED5B00D80CB8 /* ItemCollectionViewCell.swift */,
 				18A6053223CF9ADA002037CA /* ItemTableViewCell.swift */,
-				1812E9A223F36978009BBFA7 /* StoreItemCollectionViewController.swift */,
 				1812E9A023F35901009BBFA7 /* StoreItemContainerViewController.swift */,
+				205A3CE2274D297E00B6DA53 /* StoreItemTableViewDiffableDataSource.swift */,
+				205A3CE4274D372900B6DA53 /* StoreItemCollectionViewSectionHeader.swift */,
+				205A3CE0274D068600B6DA53 /* SearchScope.swift */,
 				2055B3B62743F68800D80CB8 /* ItemDisplaying.swift */,
 				18A6052523CF9803002037CA /* Assets.xcassets */,
 				18A6052723CF9803002037CA /* LaunchScreen.storyboard */,
@@ -159,12 +168,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				18A6053323CF9ADA002037CA /* ItemTableViewCell.swift in Sources */,
+				205A3CE1274D068600B6DA53 /* SearchScope.swift in Sources */,
 				1812E9A323F36978009BBFA7 /* StoreItemCollectionViewController.swift in Sources */,
 				18A6053523CFABBB002037CA /* StoreItem.swift in Sources */,
 				2055B3B52743ED5B00D80CB8 /* ItemCollectionViewCell.swift in Sources */,
 				2055B3B72743F68800D80CB8 /* ItemDisplaying.swift in Sources */,
+				205A3CE5274D372900B6DA53 /* StoreItemCollectionViewSectionHeader.swift in Sources */,
 				18A6053723CFABDC002037CA /* StoreItemController.swift in Sources */,
 				18A6053123CF9829002037CA /* StoreItemListTableViewController.swift in Sources */,
+				205A3CE3274D297F00B6DA53 /* StoreItemTableViewDiffableDataSource.swift in Sources */,
 				18A6051D23CF9802002037CA /* AppDelegate.swift in Sources */,
 				18A6051F23CF9802002037CA /* SceneDelegate.swift in Sources */,
 				1812E9A123F35901009BBFA7 /* StoreItemContainerViewController.swift in Sources */,

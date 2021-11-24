@@ -17,7 +17,7 @@ protocol ItemDisplaying {
 extension ItemDisplaying {
     func configure(for item: StoreItem, storeItemController: StoreItemController) {
         titleLabel.text = item.name
-        detailLabel.text = item.artist
+        detailLabel.text = item.kind
         itemImageView.image = UIImage(systemName: "photo")
         
         storeItemController.fetchImage(from: item.artworkURL) { result in
