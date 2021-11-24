@@ -9,12 +9,13 @@ import Foundation
 
 
 enum SearchScope: CaseIterable {
-    case all, movies, music, apps, books
+    case all, podcast, movies, music, apps, books
     
     
     var title: String {
         switch self {
         case .all: return "All"
+        case .podcast: return "Podcast"
         case .movies: return "Movies"
         case .music: return "Music"
         case .apps: return "Apps"
@@ -25,6 +26,7 @@ enum SearchScope: CaseIterable {
     var mediaType: String {
         switch self {
         case .all: return "all"
+        case .podcast: return "podcast"
         case .movies: return "movie"
         case .music: return "music"
         case .apps: return "software"

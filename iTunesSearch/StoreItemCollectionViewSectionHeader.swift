@@ -36,7 +36,7 @@ class StoreItemCollectionViewSectionHeader: UICollectionReusableView {
     }
     
     private func setupView() {
-        backgroundColor = .systemRed
+        backgroundColor = .systemGray5
         
         addSubview(titleLabel)
         titleLabel.translatesAutoresizingMaskIntoConstraints = false

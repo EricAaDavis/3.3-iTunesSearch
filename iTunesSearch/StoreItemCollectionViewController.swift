@@ -6,30 +6,60 @@ class StoreItemCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        collectionView.collectionViewLayout = configureCollectionViewLayout(for: .all)
-        
         collectionView.register(StoreItemCollectionViewSectionHeader.self, forSupplementaryViewOfKind: "Header", withReuseIdentifier: StoreItemCollectionViewSectionHeader.reuseIdentifier)
         
-        
     }
-    func configureCollectionViewLayout(for searchScope: SearchScope) -> UICollectionViewLayout {
-        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1/3), heightDimension: .absolute(166))
+    
+    func configureCollectionViewLayout(for searchScope: SearchScope) {
+        
+        
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1/3), heightDimension: .fractionalHeight(1.0))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
-        item.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 15, bottom: 10, trailing: 15)
+        item.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 5, bottom: 10, trailing: 5)
         
-        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .estimated(400))
-        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitem: item, count: 3)
-        
-        
+        let groupSize = NSCollectionLayoutSize(widthDimension: searchScope.groupWidthDimension, heightDimension: .absolute(140))
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitem: item, count: searchScope.groupItemCount)
         
         let section = NSCollectionLayoutSection(group: group)
-        //section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10)
+        section.orthogonalScrollingBehavior = searchScope.orthogonalScrollingBehavior
         
-        section.orthogonalScrollingBehavior = .groupPagingCentered
+        let headerSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(28))
+        let headerItem = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: headerSize, elementKind: "Header", alignment: .topLeading)
         
+        section.boundarySupplementaryItems = [headerItem]
         
         let layout = UICollectionViewCompositionalLayout(section: section)
         
-        return layout
+        collectionView.collectionViewLayout = layout
+        
+    }
+}
+
+extension SearchScope {
+    var orthogonalScrollingBehavior: UICollectionLayoutSectionOrthogonalScrollingBehavior {
+        switch self {
+        case .all:
+            return .continuousGroupLeadingBoundary
+        default:
+            return .none
+        }
+    }
+    
+    var groupItemCount: Int {
+        switch self {
+        case .all:
+            return 1
+        default:
+            return 3
+        }
+    }
+    
+    var groupWidthDimension: NSCollectionLayoutDimension {
+        switch self {
+        case .all:
+            return .fractionalWidth(1/3)
+        default:
+            return .fractionalWidth(1)
+        }
     }
 }
